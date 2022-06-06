@@ -4,9 +4,9 @@ namespace App\Http\Middleware;
 
 use Closure;
 
-class WhitelistIpAccess
+class AllowlistIpAccess
 {
-    public $whiteIps = ['192.168.1.1', '127.0.0.1'];
+    public $allowedIps = ['192.168.1.1', '127.0.0.1'];
         
     /**
      * Handle an incoming request.
@@ -17,7 +17,7 @@ class WhitelistIpAccess
      */
     public function handle($request, Closure $next)
     {
-        if (!in_array($request->ip(), $this->whiteIps)) {
+        if (!in_array($request->ip(), $this->allowedIps)) {
             return response('你的 IP 位址無法進入。', 200)
                   ->header('Content-Type', 'text/plain');
         }

@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', ['middleware' => ['ip.whitelist'], function () {
+Route::get('/', ['middleware' => ['ip.allowllist'], function () {
     return view('welcome');
 }]);
