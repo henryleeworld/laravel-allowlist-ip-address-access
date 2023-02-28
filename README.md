@@ -1,4 +1,4 @@
-# Laravel 9 許可對 IP 位址的存取
+# Laravel 10 許可對 IP 位址的存取
 
 存取限制可讓你定義拒絕清單，以控制對應用程式的網路存取。
 
@@ -12,7 +12,7 @@ $ git clone
 ```sh
 $ composer install
 ```
-- 產⽣ Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
+- 產生 Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
 ```sh
 $ php artisan key:generate
 ```
@@ -25,5 +25,5 @@ $ php artisan key:generate
 ![](https://i.imgur.com/H1nIgji.png)
 > 當新增規則之後，該規則會立即生效
 
-![](https://i.imgur.com/DsmZep2.png)
+![](https://i.imgur.com/dy5EefN.png)
 > 當新增所在的 IP 位址之後，則可以進入
