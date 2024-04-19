@@ -1,4 +1,4 @@
-# Laravel 10 許可對 IP 位址的存取
+# Laravel 11 許可對 IP 位址的存取
 
 存取限制可讓你定義拒絕清單，以控制對應用程式的網路存取。
 
@@ -22,8 +22,8 @@ $ php artisan key:generate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/H1nIgji.png)
+![](https://i.imgur.com/9tSYX9y.png)
 > 當新增規則之後，該規則會立即生效
 
-![](https://i.imgur.com/dy5EefN.png)
+![](https://i.imgur.com/k8OfDkS.png)
 > 當新增所在的 IP 位址之後，則可以進入

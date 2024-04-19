@@ -3,25 +3,25 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class AllowlistIpAccess
 {
     public $allowedIps = ['192.168.1.1', '127.0.0.1'];
-        
+
     /**
      * Handle an incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
-     * @return mixed
+     * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle($request, Closure $next)
+    public function handle(Request $request, Closure $next): Response
     {
         if (!in_array($request->ip(), $this->allowedIps)) {
-            return response('你的 IP 位址無法進入。', 200)
+            return response(__('Your IP address is inaccessible.'), 200)
                   ->header('Content-Type', 'text/plain');
         }
-    
+
         return $next($request);
     }
 }
