@@ -1,4 +1,4 @@
-# Laravel 11 許可對 IP 位址的存取
+# Laravel 12 許可對 IP 位址的存取
 
 存取限制可讓你定義拒絕清單，以控制對應用程式的網路存取。
 
@@ -16,14 +16,18 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
+```sh
+$ php artisan migrate
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/` 來進行首頁存取測試。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/9tSYX9y.png)
+![](https://i.imgur.com/yxqnE7T.png)
 > 當新增規則之後，該規則會立即生效
 
-![](https://i.imgur.com/k8OfDkS.png)
+![](https://i.imgur.com/GxLQEp6.png)
 > 當新增所在的 IP 位址之後，則可以進入

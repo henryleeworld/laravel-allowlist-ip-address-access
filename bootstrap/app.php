@@ -13,7 +13,7 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->alias([
-            'ip.allowllist' => AllowlistIpAccess::class
+            'ip.allowlist' => AllowlistIpAccess::class
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {

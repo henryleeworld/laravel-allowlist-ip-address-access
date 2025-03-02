@@ -21,7 +21,6 @@ class AllowlistIpAccess
             return response(__('Your IP address is inaccessible.'), 200)
                   ->header('Content-Type', 'text/plain');
         }
-
         return $next($request);
     }
 }

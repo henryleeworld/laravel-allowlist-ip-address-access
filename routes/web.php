@@ -2,6 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', ['middleware' => ['ip.allowllist'], function () {
+Route::get('/', function () {
     return view('welcome');
-}]);
+})->middleware(['ip.allowlist']);
