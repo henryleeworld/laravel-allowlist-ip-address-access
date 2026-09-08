@@ -1,4 +1,4 @@
-# Laravel 12 許可對 IP 位址的存取
+# Laravel 13 許可對 IP 位址的存取
 
 存取限制可讓你定義拒絕清單，以控制對應用程式的網路存取。
 
@@ -26,8 +26,8 @@ $ php artisan migrate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/yxqnE7T.png)
+![](https://i.imgur.com/BMU0M0f.png)
 > 當新增規則之後，該規則會立即生效
 
-![](https://i.imgur.com/GxLQEp6.png)
+![](https://i.imgur.com/isnNIJB.png)
 > 當新增所在的 IP 位址之後，則可以進入
